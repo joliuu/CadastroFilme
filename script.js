@@ -20,7 +20,7 @@ function addFilme() {
     if(titulo === "" || diretor === "" || isNaN(anoLancamento)) {
         alert('Não deixe nada vazio');
     } else {
-        let novoFilme = new Filme(titulo, diretor, anoLancamento);;
+        let novoFilme = new Filme(titulo, diretor, anoLancamento);
         let dadosDoFilme = novoFilme.dadosFilme();
         lista.innerHTML = lista.innerHTML + dadosDoFilme;
     }
